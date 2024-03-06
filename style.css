@@ -1,0 +1,203 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    width: 100%;
+    position: relative;
+}
+
+.banner img{
+    width: 100%;
+    max-height: 30svh;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(3.5px);
+}
+
+.titulo {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    font-family: "Roboto";
+    text-shadow: 0px 3px 3px black;
+}
+
+nav {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav li {
+    display: inline;
+    text-align: center;
+    padding: 0 10px;
+}
+
+nav a {
+    font-family: "Roboto";
+    text-align: center;
+    text-decoration: underline;
+    font-size: 25px;
+    color: white;
+    text-shadow: 0px 3px 3px black;
+}
+
+main {
+    max-width: 960px;
+    margin: 20px auto;
+}
+
+.especificaciones {
+    font-family: "Roboto";
+    padding: 20px 20px;
+    text-wrap:  wrap;
+}
+
+.safety {
+    width: 100px;
+    float: left;
+    margin: auto 20px;
+}
+
+.benefits {
+    width: 100px;
+    float: left;
+    margin: 60px 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 30px 0;
+    font-weight: bold;
+}
+
+p {
+   font-size: 1rem; 
+   padding: 10px 0;
+}
+
+.especificaciones p::before {
+    content: "* ";
+}
+
+p strong {
+    font-weight: bold;
+}
+
+.statement1, .statement2 {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+}
+
+.contenedores{
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.contenedores textarea {
+    display: inline-block;
+    resize: none;
+    height: 8em;
+    width: 60%;
+    padding: 7px 10px;
+    background-color: rgb(199, 199, 199);
+    font-style: italic;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    filter: drop-shadow(1px 2px 3px #4d4d4d);
+}
+
+.campo-texto::placeholder {
+    color: rgba(51, 51, 51, 0.568);
+}
+
+.btn{
+    width: 940px;
+    margin: 15px auto;
+    display: flex;
+}
+
+.boton{
+    width: 15%;
+    height: 40px;
+    margin: 10px auto;
+    font-weight: bold;
+    background-color: rgb(199, 199, 199);
+    border: none;
+    border-radius: 5px;
+    filter: drop-shadow(2px 2px 4px #000000)
+}
+
+.boton:hover {
+    background-color: white;
+    transform: scale(1.03);
+}
+
+footer {
+    text-align: center;
+    padding-top: 50px;
+  }
+
+footer img {
+    width: 100px;
+}
+  
+.Copyright {
+    color: #ffffff;
+    font-size: 1rem;
+    margin: 20px;
+  }
+
+@media screen and (max-width: 480px) {
+    body {
+        width: auto;
+    }
+
+    nav {
+        position: relative;
+        bottom: 20px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .benefits, .safety {
+        float: none;
+        margin: 5px auto;
+        right: 50%;
+    }
+
+    .contenedores {
+        width: auto;
+    }
+
+    .btn {
+        width: auto;
+        align-items: center;
+    }
+
+    .boton {
+        width: auto;
+        text-align: center;
+    }
+  }

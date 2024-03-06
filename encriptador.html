@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link  rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Encriptador</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="banner">
+        <img src="imagenes/background.jpg" />
+        <h1 class="titulo">Encriptador 3000</h1>
+      </div>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="encriptador.html">Encriptador</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="contenedores">
+        <h3>Escribe aqui tu mensaje a encriptar</h3>
+        <textarea id="texto-encriptado" class="campo-texto" placeholder="Escribe tu mensaje"></textarea>
+        <h3>Mensaje Encriptado</h3>
+        <textarea readonly id="campo-mensaje" cols="30" rows="10" class="mensaje"></textarea>
+      </div>
+
+      <div class="btn">
+          <button class="boton" onclick="btnEncriptar()">
+            Encriptar
+          </button>
+          <button class="boton" onclick="btnDesencriptar()">
+            Desencriptar
+          </button>
+          <button class="boton" onclick="limpiarCaja()">
+            Borrar
+          </button>
+      </div>
+
+      <script src="app.js"></script>
+
+      <footer>
+        <img src="imagenes/logo.png" />
+        <p class="Copyright">&copy Copyright FlameTech - 2024</p>
+      </footer>
+
+    </main>
+  </body>
+</html>
